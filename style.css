@@ -140,12 +140,13 @@ button:hover {
 
 .gallery-item h3 {
   color: var(--nasa-blue);
+  margin-top: 10px;
 }
 
 .gallery-item p {
-  margin-top: 10px;
-  padding: 5px;
-  font-size: 14px;
+  margin-top: 8px;
+  padding: 4px;
+  font-size: 16px;
   color: var(--nasa-black);
 }
 
@@ -261,13 +262,13 @@ button:hover {
   font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 6px;
-  color: #212121;
+  color: var(--nasa-blue);
   text-align: center;
 }
 
 .modal-date {
   font-size: 1em;
-  color: #666;
+  color: var(--nasa-black);
   margin-bottom: 12px;
   text-align: center;
 }
@@ -280,12 +281,14 @@ button:hover {
   max-height: 200px;
   overflow-y: auto;
   padding: 6px 2px 0 2px;
+  line-height: 1.5;
 }
 
 /* Did You Know section */
 .did-you-know {
   background: #fff;
   border-left: 6px solid var(--nasa-blue);
+  border-right: 6px solid var(--nasa-blue);
   border-radius: 8px;
   margin: 0 0 24px 0;
   padding: 18px 24px;
@@ -294,6 +297,7 @@ button:hover {
 
 .did-you-know h2 {
   color: var(--nasa-blue);
+  text-align: center;
   font-size: 1.2em;
   margin-bottom: 8px;
   font-weight: bold;
@@ -301,6 +305,7 @@ button:hover {
 
 .did-you-know p {
   color: var(--nasa-black);
+  text-align: center;
   font-size: 1em;
   margin: 0;
 }
@@ -315,4 +320,9 @@ button:hover {
 .gallery-item:hover .video-wrapper {
   transform: scale(1.05);
   box-shadow: 0 4px 16px rgba(11,61,145,0.18);
+}
+
+/* Show pointer cursor when hovering over gallery item */
+.gallery-item:hover {
+  cursor: pointer;
 }
